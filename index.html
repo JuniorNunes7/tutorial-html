@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+    <title>Exemplos Webdesign para A1</title>
+    <style>
+        .highlight {
+            padding: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            background-color: #fff;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+        }
+        .highlight2 {
+            padding: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            background-color:#bcc7f3;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+            border-radius: 25px;
+        }
+        .nt {
+            color: #2f6f9f;
+        }
+        .na {
+            color: #4f9fcf;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Exemplos</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <!-- <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li> -->
+                <li class="active">
+                    <a href="#structure">Estrutura HTML</a>
+                </li>
+                <li>
+                    <a href="#marquee">Marquee</a>
+                </li>
+                <li>
+                    <a href="#image">Imagens</a>
+                </li>
+                <!-- <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li> -->
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <div class="col-7 topic" id="structure">
+                <h2>Estrutura do HTML</h2>
+                <p class="mt-5">
+                    <h3 class="highlight2">TÍTULOS</h3>
+
+                    <p>
+                        <h1>Olá, Mundo!</h1>
+                        <h2>Olá, Mundo!</h2>
+                        <h3>Olá, Mundo!</h3>
+                        <h4>Olá, Mundo!</h4>
+                        <h5>Olá, Mundo!</h5>
+                    </p>
+
+                    <figure class="highlight">
+<pre><code class="language-html">
+&#x3C;h1&#x3E;Ol&#xE1;, Mundo!&#x3C;/h1&#x3E;
+&#x3C;h2&#x3E;Ol&#xE1;, Mundo!&#x3C;/h2&#x3E;
+&#x3C;h3&#x3E;Ol&#xE1;, Mundo!&#x3C;/h3&#x3E;
+&#x3C;h4&#x3E;Ol&#xE1;, Mundo!&#x3C;/h4&#x3E;
+&#x3C;h5&#x3E;Ol&#xE1;, Mundo!&#x3C;/h5&#x3E;
+</code></pre>
+                    </figure>
+                </p>
+
+                <p class="mt-5">
+                    <h3 class="highlight2">FORMATAÇÃO DE TEXTO</h3>
+
+                    <p>
+                        <b><u> Exemplos de Efeitos no texto </b></u><br>
+                        <b> Texto em Negrito (B) </b> <br>
+                        <I> Texto em Itálico (I) </I> <br>
+                        <tt> Texto em tamanho Fixo (TT) </tt> <br>
+                        <u> Texto Sublinhado (U) </u> <br>
+                        H<sub> 2 </sub> O <br>
+                        KM <sup> 2 </sup> <br>
+                    </p>
+
+                    <figure class="highlight">
+<pre><code class="language-html">
+&#x3C;b&#x3E;&#x3C;u&#x3E; Exemplos de Efeitos no texto &#x3C;/b&#x3E;&#x3C;/u&#x3E;
+&#x3C;b&#x3E; Texto em Negrito (B) &#x3C;/b&#x3E; 
+&#x3C;I&#x3E; Texto em It&#xE1;lico (I) &#x3C;/I&#x3E; 
+&#x3C;tt&#x3E; Texto em tamanho Fixo (TT) &#x3C;/tt&#x3E; 
+&#x3C;u&#x3E; Texto Sublinhado (U) &#x3C;/u&#x3E; 
+H&#x3C;sub&#x3E; 2 &#x3C;/sub&#x3E; O 
+KM &#x3C;sup&#x3E; 2 &#x3C;/sup&#x3E; 
+</code></pre>
+                    </figure>
+                </p>
+
+                <p class="mt-5">
+                    <h3 class="highlight2">TÍTULO DA JANELA</h3>
+
+                    <p>
+                        Deve ser usado dentro da tag <b>head</b>.
+                    </p>
+
+                    <figure class="highlight">
+<pre><code class="language-html">
+&#x3C;title&#x3E;Exemplos Webdesign para A1&#x3C;/title&#x3E;
+</code></pre>
+                    </figure>
+                </p>
+
+                <p class="mt-5">
+                    <h3 class="highlight2">QUEBRA DE LINHAS</h3>
+
+                    <p>
+                        Exemplo <br> De <br> Quebra de linha
+                    </p>
+
+                    <figure class="highlight">
+<pre><code class="language-html">
+Exemplo &#x3C;br&#x3E; De &#x3C;br&#x3E; Quebra de linha
+</code></pre>
+                    </figure>
+                </p>
+                <p class="mt-5">
+                    <h3 class="highlight2">TEXTO CENTRALIZADO</h3>
+
+                    <p>
+                        <center>Texto centralizado!</center>
+                    </p>
+
+                    <figure class="highlight">
+<pre><code class="language-html">
+&#x3C;center&#x3E;Texto centralizado!&#x3C;/center&#x3E;
+</code></pre>
+                    </figure>
+                </p>
+                <p class="mt-5">
+                    <h3 class="highlight2">COR DE FUNDO E TEXTO</h3>
+
+                    <p>
+                        <iframe srcdoc="<html><body bgcolor='gray, blue' text=red> Fundo cinza com azul e texto vermelho</body></html>"></iframe>
+                    </p>
+
+                    <figure class="highlight">
+<pre><code class="language-html">
+&#x3C;html&#x3E;
+&#x3C;body bgcolor=&#x27;gray, blue&#x27; text='red'&#x3E; 
+    Fundo cinza com azul e texto vermelho
+&#x3C;/body&#x3E;
+&#x3C;/html&#x3E;
+</code></pre>
+                    </figure>
+                </p>
+            </div>
+
+            <div class="col-7 topic" id="marquee">
+                <h2>Exemplos de uso da tag <b>marquee</b> para deslocamento de textos</h2>
+                <p class="mt-5">
+                    <h3 class="highlight2">DA ESQUERDA PARA A DIREITA</h3>
+                    <marquee>Exemplo da direita para a esquerda</marquee>
+                    
+                    <figure class="highlight">
+                        <code class="language-html"> <span class="nt">&lt;marquee&gt;</span>Exemplo da direita para a esquerda<span class="nt">&lt;/marquee&gt;</span></code>
+                    </figure>
+                </p>
+                <p class="mt-5">
+                    <h3 class="highlight2">DA DIREITA PARA A ESQUERDA</h3>
+                    <marquee direction="right">Exemplo da esquerda para a direita</marquee>
+                    
+                    <figure class="highlight">
+                        <code class="language-html"> <span class="nt">&lt;marquee <span class="na">direction</span>="right"&gt;</span>Exemplo da esquerda para a direita<span class="nt">&lt;/marquee&gt;</span></code>
+                    </figure>
+                </p>
+            </div>
+
+            <div class="col-7 topic" id="image">
+                <h2>Exemplos de uso da tag <b>image</b> para exibir imagens no HTML.</h2>
+                <p class="mt-5">
+                    <h3 class="highlight2">Adicionando uma imagem pela URL</h3>
+                    <img src="https://thumbs.gfycat.com/OptimisticNauticalAnnashummingbird-size_restricted.gif">
+                    
+                    <figure class="highlight">
+                        <code class="language-html"><span class="nt">&#x3C;img</span> <span class="na">src=</span>&#x22;https://thumbs.gfycat.com/OptimisticNauticalAnnashummingbird-size_restricted.gif&#x22;<span class="nt">&#x3E;</span></code>
+                    </figure>
+                </p>
+
+                <p class="mt-5">
+                    <h3 class="highlight2">Adicionando uma imagem local</h3>
+                    <img src="./ucb.png">
+
+                    <figure class="highlight">
+                        <code class="language-html"><span class="nt">&#x3C;img</span> <span class="na">src=</span>&#x22;./ucb.png&#x22;<span class="nt">&#x3E;</span></code>
+                    </figure>
+                </p>
+
+                <p class="mt-5">
+                    <h3 class="highlight2">Imagem com tamanho definido</h3>
+                    <img src="./git.png" width="30%" height="50%">
+                    <img src="./git.png" width="10%" height="40%">
+
+                    <p>
+                        WIDTH = Largura <br>
+                        HEIGHT = Altura <br><br>
+
+                        OBS.: Os valores podem ser em porcentagem como no exemplo, e podem ser também em pixel, exemplo: width="100px"
+                    </p>
+
+                    <figure class="highlight">
+                        <code class="language-html">
+                            <span class="nt">&#x3C;img</span> <span class="na">src=</span>&#x22;./git.png&#x22; <span class="na">width=</span>&#x22;30%&#x22; <span class="na">height=</span>&#x22;50%&#x22; <span class="nt">&#x3E;</span><br>
+                            <span class="nt">&#x3C;img</span> <span class="na">src=</span>&#x22;./git.png&#x22; <span class="na">width=</span>&#x22;10%&#x22; <span class="na">height=</span>&#x22;40%&#x22; <span class="nt">&#x3E;</span>
+                        </code>
+                    </figure>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.topic').hide()
+            $('#structure').show()
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+
+            $(window).bind('hashchange', function(e) {
+                let hash = e.currentTarget.location.hash
+                $('.topic').hide()
+                $('li').removeClass('active')
+                $(hash).show()
+                $(`[href="${hash}"]`).parent('li').addClass('active')
+            });
+        });
+    </script>
+</body>
+
+</html>
